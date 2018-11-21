@@ -79,7 +79,7 @@ let tresArgs2 = (x,y,z) => {
 
   if(x!= undefined && y === undefined & z === undefined) {
       return x;
-    } else if(x!= undefined && y != undefined){
+    } else if(x!= undefined && y != undefined & z === undefined){
       return x+y;
     } else if(x!= undefined && y != undefined && z!= undefined){
       return (x+y) / z;
@@ -90,5 +90,9 @@ let tresArgs2 = (x,y,z) => {
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+tresArgs2() // false
+tresArgs2(1) // 1
+tresArgs2(1,2) // 3
+tresArgs2(2,2,2) // 2
+
 ```
